@@ -1,0 +1,31 @@
+import org.testng.annotations.Test;
+
+public class TestSuiteExample {
+    @Test(groups = {"Sanity"}, priority = 1)
+    public void verifyLogin() {
+        System.out.println("Sanity Test - Verify Login");
+    }
+
+    @Test(groups = {"Sanity"}, priority = 2)
+    public void verifyHomePage() {
+        System.out.println("Sanity Test - Verify Home Page");
+    }
+   @Test(groups = {"Regression"}, priority = 3)
+    public void verifyUserCreation() {
+        System.out.println("Regression Test - Verify User Creation");
+    }
+
+    @Test(groups = {"Regression"}, priority = 4)
+    public void verifyUserDeletion() {
+        System.out.println("Regression Test - Verify User Deletion");
+    }
+   @Test(groups = {"EndToEnd"}, priority = 5)
+    public void verifyCompleteOrderFlow() {
+        System.out.println("EndToEnd Test - Verify Complete Order Flow");
+    }
+
+    @Test(groups = {"EndToEnd"}, priority = 6)
+    public void verifyPaymentAndInvoice() {
+        System.out.println("EndToEnd Test - Verify Payment and Invoice");
+    }
+}
