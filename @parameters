@@ -1,0 +1,18 @@
+@Parameters
+    Used to pass static values from the testng.xml file to test methods.
+    Best for configuration-level data (browser, environment, URL, credentials, etc.).
+
+Key Characteristics
+    Values come from testng.xml
+    One set of values per test execution
+    Simple and easy, but limited flexibility
+    Supports String, int, boolean, etc.
+
+@DataProvider
+    Used to pass dynamic and multiple sets of data to a test method.
+    Data is defined in Java code (or fetched from files, DB, Excel, APIs, etc.).
+Key Characteristics
+    Returns Object[][]
+    Test runs once per data set
+    Very flexible and powerful
+    Can generate data programmatically
